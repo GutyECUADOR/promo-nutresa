@@ -1,71 +1,75 @@
 <div class="navbar-container">
     <div class="navbar-dark" data-sticky="top" style="background-color:#046224">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand">
-            <img alt="logo" src="assets/img/logo.png" style="width:125px"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="icon-menu h4"></i>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Gana Fácil</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Catálogo</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Preguntas Frecuentes</a>
-            </li>
-            
-            
-            </ul>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand">
+                <img alt="logo" src="assets/img/logo.png" style="width:125px"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="icon-menu h4"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Gana Fácil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Preguntas Frecuentes</a>
+                </li>
+                
+                
+                </ul>
 
-            <ul class="navbar-nav">
-            <li class="nav-item">
-                <a href="#">Regístrate</a>
-                <span>&nbsp;o&nbsp;</span><a href="#">Ingresa</a>
-            </li>
-            </ul>
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#">Regístrate</a>
+                    <span>&nbsp;o&nbsp;</span><a href="#">Ingresa</a>
+                </li>
+                </ul>
 
+            </div>
+            <!--end nav collapse-->
+            </nav>
         </div>
-        <!--end nav collapse-->
-        </nav>
-    </div>
     <!--end of container-->
     </div>
 </div>
 
 <div class="main-container">
-    <section class="text-light" style="background-color:#92ba1f">
-    <div class="container">
-        <div class="row justify-content-center mb-2">
-        <div class="col-auto text-center">
-            <span class="title-decorative">
-                Bienvenido a Gana fácil Nutresa, el lugar donde viven nuestras mejores promociones y donde ganar es muy fácil.
-                Solo debes inscribirte y participar en todas las iniciativas de Nutresa que mes a mes, te llenarán de premios.
-            </span>
-            <h1 class="display-5">HAZ CLIC EN LA PROMOCIÓN QUE DESEAS PARTICIPAR.</h1>
-        </div>
-        <!--end of col-->
-        </div>
-        <!--end of row-->
-        <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-6">
-            <div class="card-body row no-gutters align-items-center">
-                <img src="assets/img/esteaniosi.png" alt="Promo" class="img-responsive w-100">
+    <div class="fireworks">
+        <section class="text-light" style="background: linear-gradient(135deg, #046224 0%, #7b9236  100%);">
+            <div class="container">
+                <div class="row justify-content-center mb-2">
+                <div class="col-auto text-center">
+                    <span class="title-decorative">
+                        Bienvenido a Gana fácil Nutresa, el lugar donde viven nuestras mejores promociones y donde ganar es muy fácil.
+                        Solo debes inscribirte y participar en todas las iniciativas de Nutresa que mes a mes, te llenarán de premios.
+                    </span>
+                    <h1 class="display-5">HAZ CLIC EN LA PROMOCIÓN QUE DESEAS PARTICIPAR.</h1>
+                </div>
+                <!--end of col-->
+                </div>
+                <!--end of row-->
+                <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-6">
+                    <div class="card-body row no-gutters align-items-center">
+                        <img src="assets/img/esteaniosi.png" alt="Promo" class="img-responsive w-100 zoom" style="z-index: 2;">
+                        
+                    </div>
                 
+                </div>
+                <!--end of col-->
+                </div>
+                <!--end of row-->
             </div>
-           
-        </div>
-        <!--end of col-->
-        </div>
-        <!--end of row-->
+        <!--end of container-->
+        </section>
     </div>
-    <!--end of container-->
-    </section>
+    
+
     <!--end of section-->
     <section>
     <div class="container">
