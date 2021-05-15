@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'entypo';
-  src: url('../fonts/entypo.eot?79395234');
+  src: url('../fonts/entypo.eot');
   src: url('../fonts/entypo.eot?79395234#iefix') format('embedded-opentype'),
        url('../fonts/entypo.woff2?79395234') format('woff2'),
        url('../fonts/entypo.woff?79395234') format('woff'),
@@ -9,6 +9,18 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: Gotham;
+  src: url("../fonts/Gotham Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Gotham;
+  font-weight: bold;
+  src: url("../fonts/Gotham Black.otf") format("opentype");
+}
+
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
@@ -311,7 +323,7 @@
 .icon-remove-user:before { content: '\e8fd'; } /* '' */
 .icon-reply-all:before { content: '\e8fe'; } /* '' */
 .icon-reply:before { content: '\e8ff'; } /* '' */
-.icon-resize-100%:before { content: '\e900'; } /* '' */
+/* .icon-resize-100%:before { content: '\e900'; } */ /* '' */
 .icon-resize-full-screen:before { content: '\e901'; } /* '' */
 .icon-retweet:before { content: '\e902'; } /* '' */
 .icon-rocket:before { content: '\e903'; } /* '' */

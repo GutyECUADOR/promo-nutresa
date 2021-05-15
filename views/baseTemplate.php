@@ -19,7 +19,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="prepárate para la mega promo">
       <link href="assets/css/socicon.css" rel="stylesheet" type="text/css" media="all" />
-      <link href="assets/css/entypo.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="assets/css/fonts.css" rel="stylesheet" type="text/css" media="all" />
       <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
       <link href="assets/css/custom.css?<?php echo date('Ymdhiiss')?>" rel="stylesheet" type="text/css" media="all" />
   

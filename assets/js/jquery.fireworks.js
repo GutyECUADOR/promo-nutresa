@@ -8,8 +8,8 @@ TODO:
 */
 
 (function( $ ) {
-    var MAX_ROCKETS = 5,
-        MAX_PARTICLES = 500;
+    var MAX_ROCKETS = 1,
+        MAX_PARTICLES = 200;
 
     var FUNCTIONS = {
         'init': function(element) {

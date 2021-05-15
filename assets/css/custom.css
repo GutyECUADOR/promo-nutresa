@@ -8,6 +8,14 @@
 */
 
 /*Zoom*/
+.text-primary-nutresa{
+  color: #046224;
+}
+
+.text-secondary-nutresa{
+  color: #FFDF42;
+}
+
 .zoom {
     transition: transform .5s ease;
   }
@@ -93,12 +101,20 @@
 
 .custom-link:hover{
  text-decoration: none; 
- color: #e99a01;
+ color: #fbff00;
 }
 
-.active{
- text-decoration: none; 
- color: #e99a01;
+link.active{
+  color: #fbff00 !important;
+  border-bottom: 2px solid;
+}
+
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #fbff00 !important;
+  border-bottom: 2px solid;
 }
 
 .col {
