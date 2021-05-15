@@ -11,6 +11,10 @@ class RouteModel {
             case 'adivinaquien':
                 $contenido = "views/modulos/adivinaquienView.php";
                 break;
+
+            case 'evento':
+                $contenido = "views/modulos/eventoView.php";
+                break;
                 
             default:
                 $contenido = "views/modulos/bienvenidosView.php";

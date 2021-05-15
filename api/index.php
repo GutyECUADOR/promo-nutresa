@@ -23,30 +23,11 @@ class ajax{
       $this->ajaxController = new ajaxController();
     }
 
-    public function getInfoInitForm() {
-      return $this->ajaxController->getInfoInitForm();
+    public function verify_code(string $code) {
+      return $this->ajaxController->verify_code($code);
     }
 
-    public function postAddCliente($cliente) {
-      return $this->ajaxController->postAddCliente($cliente);
-    }
-
-    public function getAllClientes() {
-      return $this->ajaxController->getAllClientes();
-    }
-
-    public function getUsuarioBy($valor) {
-      return $this->ajaxController->getUsuarioBy($valor);
-    }
-
-    public function postActualizaPuntos($clientePuntos) {
-      return $this->ajaxController->postActualizaPuntos($clientePuntos);
-    }
-
-    public function getAllPuntosByCliente($cedula){
-      return $this->ajaxController->getAllPuntosByCliente($cedula);
-  }
-
+   
 }
 
   /* Cuerpo del API */
@@ -61,76 +42,17 @@ class ajax{
       
     }
     
-
     switch ($HTTPaction) {
 
-      case 'getInfoInitForm':
-        $respuesta = $ajax->getInfoInitForm();
-        $rawdata = array('status' => 'success', 'mensaje' => 'respuesta correcta', 'data'=> $respuesta);
+      case 'verify_code':
+        $respuesta = $ajax->verify_code();
+        $rawdata = array('status' => 'success', 'message' => 'respuesta correcta', 'data'=> $respuesta);
         echo json_encode($rawdata);
 
-      break;
-
-      case 'postAddCliente':
-        if (isset($_POST['cliente'])) {
-          $cliente = json_decode($_POST['cliente']);
-          $respuesta = $ajax->postAddCliente($cliente);
-          $rawdata = $respuesta;
-        }else{
-          $rawdata = array('status' => 'error', 'mensaje' => 'No se ha indicado parámetros.');
-        }
-        
-        echo json_encode($rawdata);
-
-      break;
-
-      case 'getAllClientes':
-        $respuesta = $ajax->getAllClientes();
-        $rawdata = array('status' => 'success', 'mensaje' => 'respuesta correcta', 'data'=> $respuesta);
-        echo json_encode($rawdata);
-
-      break;
-
-      case 'getUsuarioBy':
-        if (isset($_GET['cedula'])) {
-          $valor = $_GET['cedula'];
-          $respuesta = $ajax->getUsuarioBy($valor);
-          $rawdata = array('status' => 'success', 'mensaje' => 'respuesta correcta', 'data'=> $respuesta);
-        }else{
-          $rawdata = array('status' => 'error', 'mensaje' => 'No se ha indicado parámetros.');
-        }
-        echo json_encode($rawdata);
-
-      break;
-
-      case 'postActualizaPuntos':
-        if (isset($_POST['clientePuntos'])) {
-          $clientePuntos = json_decode($_POST['clientePuntos']);
-          $respuesta = $ajax->postActualizaPuntos($clientePuntos);
-          $rawdata = $respuesta;
-        }else{
-          $rawdata = array('status' => 'error', 'mensaje' => 'No se ha indicado parámetros.');
-        }
-        
-        echo json_encode($rawdata);
-
-      break;
-
-      case 'getAllPuntosByCliente':
-        if (isset($_GET['cedula'])) {
-        $cedula = $_GET['cedula'];
-        $respuesta = $ajax->getAllPuntosByCliente($cedula);
-        $rawdata = array('status' => 'success', 'mensaje' => 'respuesta correcta', 'data'=> $respuesta);
-        
-        }else{
-          $rawdata = array('status' => 'error', 'mensaje' => 'No se ha indicado parámetros.');
-        }
-
-        echo json_encode($rawdata);
       break;
 
       default:
-          $rawdata = array('status' => 'error', 'mensaje' =>'El API no ha podido responder la solicitud, revise el tipo de action');
+          $rawdata = array('status' => 'error', 'message' =>'El API no ha podido responder la solicitud, revise el tipo de action');
           echo json_encode($rawdata);
       break;
     }
@@ -139,7 +61,7 @@ class ajax{
     //Return error message
     $rawdata = array();
     $rawdata['status'] = "error";
-    $rawdata['mensaje'] = $ex->getMessage();
+    $rawdata['message'] = $ex->getMessage();
     echo json_encode($rawdata);
   }
 

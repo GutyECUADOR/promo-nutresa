@@ -1,48 +1,55 @@
-<div class="navbar-container">
-    <div class="navbar-dark" data-sticky="top" style="background-color:#046224">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 text-center">
-                    <img alt="Logo" src="<?php echo LOGO_NAME?>" style="width:240px"/>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?php require_once 'sis_modules/navbar.php' ?>
 
-<div class="main-container">
-    <div class="fireworks">
+<div class="main-container" id="app">
+  
         <section class="text-light" style="background: linear-gradient(135deg, #046224 0%, #7b9236  100%);">
             <div class="container">
                 <div class="row justify-content-center mb-2">
                 <div class="col-auto text-center">
-                    <p style="z-index: 2;">
-                        Bienvenido a <span class="text-secondary-nutresa">Gana fácil Nutresa</span> , el lugar donde viven nuestras mejores promociones y donde ganar es muy fácil.
-                        Solo debes inscribirte y participar en todas las iniciativas de Nutresa que mes a mes, te llenarán de premios.
+                    <h3 class="text-secondary-nutresa">EVENTO EN VIVO</h3>
+                     <p>
+                        Ingresa el código de promoción para poder acceder al evento.
                     </p>
-                    <h3 class="display-5 text-secondary-nutresa" style="z-index: 2;">HAZ CLIC EN LA PROMOCIÓN QUE DESEAS PARTICIPAR.</h3>
                 </div>
+
                 <!--end of col-->
                 </div>
                 <!--end of row-->
-                <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-6">
-                    <div class="card-body row no-gutters align-items-center">
-                        <a href="?action=adivinaquien" style="z-index: 2;">
-                            <img src="assets/img/BANNER-CORONA1.png" alt="Promo" class="img-responsive w-100 zoom" style="border-radius:10px">
-                        </a>
-                       
-                        
+                <div class="row justify-content-center" id="formregistro" v-if="!search_user.isAutenticated">
+                    <div class="col-12 col-md-10 col-lg-6">
+                        <form @submit.prevent="verify_code" class="card card-sm">
+                            <div class="card-body row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <i class="icon-key h4 text-body"></i>
+                            </div>
+                            <!--end of col-->
+                            <div class="col">
+                                <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Código de ingreso" required />
+                            </div>
+                            <!--end of col-->
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-lg btn-success" :disabled="search_user.isloading"  >
+                                    <i class="fa" :class="[{'fa-spin fa-refresh': search_user.isloading}, {  'fa-key' : !search_user.isloading  }]" ></i> Ingresar al evento
+                                </button>
+                            </div>
+                            <!--end of col-->
+                            </div>
+                        </form>
                     </div>
-                
-                </div>
                 <!--end of col-->
                 </div>
+
+                <div class="row" id="video" v-if="search_user.isAutenticated">
+                    <div class="embed-responsive embed-responsive-16by9 mb-3 hide" style="border-width: 4px; margin-top:5px; border-radius: 5px;">
+                        <iframe class="embed-responsive-item" style="border: 6px solid #CCCCCC" src="https://youtube.com/embed/KvRVky0r7YM?autoplay=true&controls=1"></iframe>
+                    </div>
+                </div>
+
+                
                 <!--end of row-->
             </div>
-        <!--end of container-->
+      
         </section>
-    </div>
     
     
     <!-- <section>
@@ -93,6 +100,7 @@
 
 
 <!-- Required vendor scripts (Do not remove) -->
+<script type="text/javascript" src="assets/js/vue.js"></script>
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/popper.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
@@ -100,6 +108,7 @@
 <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
 <script type="text/javascript" src="assets/js/jquery.fireworks.js"></script>
 
+<script type="text/javascript" src="<?php echo ROOT_PATH; ?>assets\js\pages\evento.js?<?php echo date('Ymdhiiss')?>"></script>
 
 <script type="text/javascript" >
   $('.fireworks').fireworks();

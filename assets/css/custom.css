@@ -9,11 +9,11 @@
 
 /*Zoom*/
 .text-primary-nutresa{
-  color: #046224;
+  color: #046224 !important;
 }
 
 .text-secondary-nutresa{
-  color: #FFDF42;
+  color: #FFDF42 !important;
 }
 
 .zoom {

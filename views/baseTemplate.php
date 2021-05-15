@@ -23,7 +23,7 @@
       <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
       <link href="assets/css/custom.css?<?php echo date('Ymdhiiss')?>" rel="stylesheet" type="text/css" media="all" />
   
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="assets/css/bootstrap-social.css" rel="stylesheet" type="text/css" media="all" />
       <link href="assets/css/sweetalert.css" rel="stylesheet" type="text/css" media="all" />
      
