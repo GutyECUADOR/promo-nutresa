@@ -10,28 +10,38 @@ class ajaxModel extends conexion  {
         $nombreUpper = strtoupper($usuario->nombre);
         try{
             $this->instancia->beginTransaction();  
-            $query = " 
-           
-                INSERT INTO usuarios (nombre, correo, telefono, codigo) 
-                values (:nombre, :correo, :telefono, :codigo)
-          
-            ";  
+            $query = "SELECT * FROM usuarios WHERE codigo = :codigo_select AND (nombre = '' OR nombre =:nombre_select)";  
 
             $stmt = $this->instancia->prepare($query); 
-            /* $stmt->bindParam(':telefono_exist', $usuario->telefono); 
-            $stmt->bindParam(':telefono_select', $usuario->telefono);  */
+            $stmt->bindParam(':codigo_select', $usuario->codigo); 
+            $stmt->bindParam(':nombre_select', $nombreUpper); 
+            $stmt->execute();
+            $resulset = $stmt->fetch( \PDO::FETCH_ASSOC );
 
-            $stmt->bindParam(':nombre', $nombreUpper); 
-            $stmt->bindParam(':correo', $usuario->correo); 
-            $stmt->bindParam(':telefono', $usuario->telefono); 
-            $stmt->bindParam(':codigo', $usuario->codigo); 
-
+            if ($resulset) {
+                $query = " 
+                    UPDATE usuarios 
+                    SET nombre = :nombre,
+                        correo = :correo,
+                        telefono = :telefono
+                    WHERE codigo = :codigo
+                    "
+                ;  
+                $stmt = $this->instancia->prepare($query); 
+                $stmt->bindParam(':nombre', $nombreUpper); 
+                $stmt->bindParam(':correo', $usuario->correo); 
+                $stmt->bindParam(':telefono', $usuario->telefono); 
+                $stmt->bindParam(':codigo', $usuario->codigo); 
+                $stmt->execute();
+                $message ="Registro correcto, ya puede unirse el evento en Vivo.";
+            }else{
+                $message ="El codigo de registro no es válido y ya fue utilizado.";
+            }
 
            
-            $stmt->execute();
 
             $commit = $this->instancia->commit();
-            return array('status' => 'success', 'message' => 'Registro correcto, ya puede unirse el evento en Vivo.', 'commit'=>$commit);
+            return array('status' => 'success', 'message' => $message, 'commit'=>$commit ,'usuario'=> $resulset);
             
         }catch(\PDOException $exception){
             $this->instancia->rollBack();

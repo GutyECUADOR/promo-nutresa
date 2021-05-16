@@ -34,7 +34,8 @@ const app = new Vue({
                     console.error(error);
                 }); 
 
-            if (response.commit) {
+                console.log(response);
+            if (response.usuario) {
                 this.search_user.isAutenticated = true;
                 alert(response.message);
             }else{
