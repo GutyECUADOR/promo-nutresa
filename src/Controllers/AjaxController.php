@@ -14,40 +14,11 @@ class ajaxController  {
         $this->ajaxModel->conectarDB();
     }
 
-    public function getInfoInitForm(){
-        $ciudades = $this->ajaxModel->getCiudades();
-        $puntosVenta = $this->ajaxModel->getPuntosVenta();
-        return array('ciudades'=> $ciudades, 'puntosVenta'=> $puntosVenta);
-    }
-
-    /* Retorna la respuesta del modelo ajax*/
-    public function postAddCliente($cliente){
+    public function verify_code(object $usuario){
+        return $this->ajaxModel->verify_code($usuario);
        
-        $response = $this->ajaxModel->postAddCliente($cliente);
-        return $response;
     }
 
-    public function getAllClientes(){
-        $response = $this->ajaxModel->getAllClientes();
-        return $response;
-    }
-
-    public function getUsuarioBy($valor){
-        $response = $this->ajaxModel->getUsuarioBy($valor, 'cedula');
-        return $response;
-    }
-
-    public function postActualizaPuntos($clientePuntos) {
-        $response = $this->ajaxModel->postActualizaPuntos($clientePuntos);
-        return $response;
-    }
-
-    public function getAllPuntosByCliente($cedula){
-        $transacciones = $this->ajaxModel->getAllTransaccionesByCliente($cedula);
-        $totalKilos = $this->ajaxModel->getTotalKilos($cedula);
-        return array('totalKilos'=> $totalKilos, 'transacciones'=> $transacciones);
-    }
     
-
 
 }

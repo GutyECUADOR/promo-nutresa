@@ -16,23 +16,28 @@
                 </div>
                 <!--end of row-->
                 <div class="row justify-content-center" id="formregistro" v-if="!search_user.isAutenticated">
-                    <div class="col-12 col-md-10 col-lg-6">
-                        <form @submit.prevent="verify_code" class="card card-sm">
-                            <div class="card-body row no-gutters align-items-center">
-                            <div class="col-auto">
-                                <i class="icon-key h4 text-body"></i>
+                    <div class="col-12 col-md-10 col-lg-6" >
+                        <form  @submit.prevent="verify_code">
+                            <div class="form-group">
+                                <label for="login-email">Correo</label>
+                                <input class="form-control form-control-lg" v-model="usuario.correo" type="email" name="correo" id="login-email" placeholder="Email" required/>
                             </div>
-                            <!--end of col-->
-                            <div class="col">
-                                <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Código de ingreso" required />
+                            <div class="form-group">
+                                <label for="login-nombre">Nombre</label>
+                                <input class="form-control form-control-lg"  v-model="usuario.nombre" type="text" name="nombre" id="login-nombre" placeholder="Nombre" required/>
                             </div>
-                            <!--end of col-->
-                            <div class="col-auto">
+                            <div class="form-group">
+                                <label for="login-telefono">Teléfono</label>
+                                <input class="form-control form-control-lg" v-model="usuario.telefono" type="text" name="telefono" id="login-telefono" placeholder="Teléfono" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="login-codigo">Codigo</label>
+                                <input class="form-control form-control-lg" v-model="usuario.codigo" type="password" name="codigo" id="login-codigo" placeholder="Código" required/>
+                            </div>
+                            <div class="text-center">
                                 <button type="submit" class="btn btn-lg btn-success" :disabled="search_user.isloading"  >
                                     <i class="fa" :class="[{'fa-spin fa-refresh': search_user.isloading}, {  'fa-key' : !search_user.isloading  }]" ></i> Ingresar al evento
                                 </button>
-                            </div>
-                            <!--end of col-->
                             </div>
                         </form>
                     </div>

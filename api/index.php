@@ -16,24 +16,10 @@ require_once '../vendor/autoload.php';
 $dotenv = Dotenv::createImmutable('../');
 $dotenv->load();
 
-class ajax{
-  private $ajaxController;
-   
-    public function __construct() {
-      $this->ajaxController = new ajaxController();
-    }
-
-    public function verify_code(string $code) {
-      return $this->ajaxController->verify_code($code);
-    }
-
-   
-}
-
   /* Cuerpo del API */
 
   try{
-    $ajax = new ajax(); //Instancia que controla las acciones
+    $ajaxController = new ajaxController();
 
     if (isset($_GET["action"])) {
       $HTTPaction = $_GET["action"];
@@ -45,8 +31,13 @@ class ajax{
     switch ($HTTPaction) {
 
       case 'verify_code':
-        $respuesta = $ajax->verify_code();
-        $rawdata = array('status' => 'success', 'message' => 'respuesta correcta', 'data'=> $respuesta);
+        if (isset($_POST['usuario'])) {
+          $usuario = json_decode($_POST['usuario']);
+          $rawdata = $ajaxController->verify_code($usuario);
+        }else{
+          http_response_code(400);
+          $rawdata = array('status' => 'error', 'message' => 'No se ha indicado parámetros.');
+        }
         echo json_encode($rawdata);
 
       break;
