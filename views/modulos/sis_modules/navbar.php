@@ -17,7 +17,7 @@
                     <a href="#" data-toggle="modal" data-target="#terminosModal" class="nav-link">Términos & Condiciones</a>
                 </li>
                 <li class="nav-item">
-                    <a href="?action=mecanica" class="nav-link">Mecánica</a>
+                    <a href="?action=mecanica-adivina-quien" class="nav-link">Mecánica</a>
                 </li>
                 <li class="nav-item">
                     <a href="?action=evento" class="nav-link">Evento</a>

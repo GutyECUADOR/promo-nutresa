@@ -26,16 +26,16 @@
                 </div>
                 <!--end of row-->
                 <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-6">
-                    <div class="card-body row no-gutters align-items-center">
-                        <a href="?action=adivinaquien" style="z-index: 2;">
-                            <img src="assets/img/BANNER-CORONA1.png" alt="Promo" class="img-responsive w-100 zoom" style="border-radius:10px">
-                        </a>
-                       
+                    <div class="col-12 col-md-10 col-lg-6">
+                        <div class="card-body row no-gutters align-items-center">
+                            <a href="?action=mecanica-adivina-quien" style="z-index: 2;">
+                                <img src="assets/img/BANNER-CORONA1.png" alt="Promo" class="img-responsive w-100 zoom" style="border-radius:10px">
+                            </a>
                         
+                            
+                        </div>
+                    
                     </div>
-                
-                </div>
                 <!--end of col-->
                 </div>
                 <!--end of row-->

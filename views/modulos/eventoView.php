@@ -35,7 +35,7 @@
                                 <input class="form-control form-control-lg" v-model="usuario.codigo" type="password" name="codigo" id="login-codigo" placeholder="Código" required/>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-lg btn-success" :disabled="search_user.isloading"  >
+                                <button type="submit" class="btn btn-lg btn-success text-dark" style="background-color: #ffe000;" :disabled="search_user.isloading"  >
                                     <i class="fa" :class="[{'fa-spin fa-refresh': search_user.isloading}, {  'fa-key' : !search_user.isloading  }]" ></i> Ingresar al evento
                                 </button>
                             </div>
@@ -46,7 +46,7 @@
 
                 <div class="row" id="video" v-if="search_user.isAutenticated">
                     <div class="embed-responsive embed-responsive-16by9 mb-3 hide" style="border-width: 4px; margin-top:5px; border-radius: 5px;">
-                        <iframe class="embed-responsive-item" style="border: 6px solid #CCCCCC" src="https://youtube.com/embed/KvRVky0r7YM?autoplay=true&controls=1"></iframe>
+                        <iframe class="embed-responsive-item" style="border: 6px solid #CCCCCC" :src='getURLVideo()'></iframe>
                     </div>
                 </div>
 

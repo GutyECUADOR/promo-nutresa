@@ -2,15 +2,42 @@
 
 <div class="main-container">
     
-    <section class="text-light" style="background: radial-gradient(circle, rgba(2,174,236,1) 0%, rgba(1,85,171,1) 100%);">
+    <section class="text-light" style="background: radial-gradient(circle, #ffdc3e 0%, #046224 100%);">
         <div class="container">
             <div class="row justify-content-center mb-2">
             
             </div>
             <!--end of row-->
             <div class="row justify-content-center">
-           
+                <div class="col-12 col-md-10 col-lg-6 text-center">
+                    <img src="assets/img/BANNER-CORONA1.png" alt="Promo" class="img-responsive w-100 zoom mb-1" style="border-radius:10px">
+                </div>
             </div>
+
+            
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-6 text-center">
+                    <img src="assets/img/paso1_corona.png" alt="premios" class="img-responsive w-100 zoom">
+                </div>
+                <div class="col-12 col-md-10 col-lg-6 text-center">
+                    <img src="assets/img/paso2_corona.png" alt="premios" class="img-responsive w-100 zoom">
+                </div>
+            </div>
+           
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-6 text-center">
+                    <img src="assets/img/paso3_corona.png" alt="premios" class="img-responsive w-100 zoom">
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-6 text-center">
+                    <img src="assets/img/bonos_corona.png" alt="premios" class="img-responsive w-100 zoom">
+                </div>
+            </div>
+
+          
+          
             <!--end of row-->
         </div>
     <!--end of container-->
