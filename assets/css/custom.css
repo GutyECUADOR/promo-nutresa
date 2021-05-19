@@ -17,6 +17,15 @@
   border-radius: 17px;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #FFDF42;
+  font-weight: bold;
+}
+
 .text-primary-nutresa{
   color: #FFDF42 !important;
 }

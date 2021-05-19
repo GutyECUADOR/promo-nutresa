@@ -1,3 +1,14 @@
+<?php
+
+    function getActive($action){
+       if ($_GET['action'] == $action){
+        return "active";
+        }
+        
+    }
+   
+?>
+
 <div class="navbar-container">
     <div class="navbar-dark" data-sticky="top" style="background-color:#5c3427">
         <div class="container">
@@ -11,19 +22,19 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                 <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="?action=inicio" class="nav-link">Inicio</a>
+                    <a href="?action=inicio" class="nav-link  <?php echo getActive('inicio')?>">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="?action=mecanica-adivina-quien" class="nav-link <?php echo getActive('mecanica-adivina-quien')?>">Mecánica</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" data-toggle="modal" data-target="#terminosModal" class="nav-link">Términos & Condiciones</a>
                 </li>
                 <li class="nav-item">
-                    <a href="?action=mecanica-adivina-quien" class="nav-link">Mecánica</a>
+                    <a href="?action=premios" class="nav-link <?php echo getActive('premios')?>">Premios</a>
                 </li>
                 <li class="nav-item">
-                    <a href="?action=premios" class="nav-link">Premios</a>
-                </li>
-                <li class="nav-item">
-                    <a href="?action=evento" class="nav-link">Evento</a>
+                    <a href="?action=evento" class="nav-link <?php echo getActive('evento')?>">Evento</a>
                 </li>
                
                 </ul>
