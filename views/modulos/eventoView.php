@@ -2,12 +2,12 @@
 
 <div class="main-container" id="app">
   
-        <section class="text-light" style="background: linear-gradient(135deg, #046224 0%, #7b9236  100%);">
+        <section class="text-light" style="background: radial-gradient(circle, #ffdc3e 0%, #ffd72c 100%)">
             <div class="container">
                 <div class="row justify-content-center mb-2">
                 <div class="col-auto text-center">
-                    <h3 class="text-secondary-nutresa">EVENTO EN VIVO</h3>
-                     <p>
+                    <h3 class="text-secondary-nutresa" style="font-weight: bold">EVENTO EN VIVO</h3>
+                     <p class="text-secondary-nutresa">
                         Ingresa el código de promoción para poder acceder al evento.
                     </p>
                 </div>
@@ -19,19 +19,19 @@
                     <div class="col-12 col-md-10 col-lg-6" >
                         <form  @submit.prevent="verify_code">
                             <div class="form-group">
-                                <label for="login-email" style="color:white!important;">Correo</label>
+                                <label for="login-email" class="text-secondary-nutresa">Correo</label>
                                 <input class="form-control form-control-lg" v-model="usuario.correo" type="email" name="correo" id="login-email" placeholder="Email" required/>
                             </div>
                             <div class="form-group">
-                                <label for="login-nombre" style="color:white!important;">Nombre</label>
+                                <label for="login-nombre" class="text-secondary-nutresa">Nombre</label>
                                 <input class="form-control form-control-lg"  v-model="usuario.nombre" type="text" name="nombre" id="login-nombre" placeholder="Nombre" required/>
                             </div>
                             <div class="form-group">
-                                <label for="login-telefono" style="color:white!important;">Teléfono</label>
+                                <label for="login-telefono" class="text-secondary-nutresa">Teléfono</label>
                                 <input class="form-control form-control-lg" v-model="usuario.telefono" type="text" name="telefono" id="login-telefono" placeholder="Teléfono" required/>
                             </div>
                             <div class="form-group">
-                                <label for="login-codigo" style="color:white!important;">Codigo</label>
+                                <label for="login-codigo" class="text-secondary-nutresa">Codigo</label>
                                 <input class="form-control form-control-lg" v-model="usuario.codigo" type="password" name="codigo" id="login-codigo" placeholder="Código" required/>
                             </div>
                             <div class="text-center">

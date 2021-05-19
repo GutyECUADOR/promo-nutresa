@@ -2,7 +2,7 @@
 
 <div class="main-container">
     
-    <section class="text-light" style="background: radial-gradient(circle, #ffdc3e 0%, #046224 100%);">
+    <section class="text-light" style="background: radial-gradient(circle, #ffdc3e 0%, #ffd72c 100%);">
         <div class="container">
             <div class="row justify-content-center mb-2">
             
