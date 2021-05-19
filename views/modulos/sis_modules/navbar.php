@@ -20,8 +20,12 @@
                     <a href="?action=mecanica-adivina-quien" class="nav-link">Mecánica</a>
                 </li>
                 <li class="nav-item">
+                    <a href="?action=premios" class="nav-link">Premios</a>
+                </li>
+                <li class="nav-item">
                     <a href="?action=evento" class="nav-link">Evento</a>
                 </li>
+               
                 </ul>
 
             
