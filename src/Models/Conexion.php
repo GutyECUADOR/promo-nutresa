@@ -31,6 +31,8 @@ class Conexion {
         $this->pass = $_ENV['DB_PASSWORD'];
         $this->charset = "utf8";
         $this->instancia = $this->getInstanciaCNX();
+
+        
     }
     
     /** Retorna una instancia PDO**/

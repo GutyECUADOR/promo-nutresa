@@ -1,6 +1,6 @@
 <?php namespace App\Controllers;
 
-use App\Models\ajaxModel;
+use App\Models\AjaxModel;
 
 class AjaxController  {
 
