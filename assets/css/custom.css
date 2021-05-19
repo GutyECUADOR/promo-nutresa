@@ -8,6 +8,15 @@
 */
 
 /*Zoom*/
+
+.button-nutresa{
+  background-color: #5b3327 !important;
+  color: #FFDF42 !important;
+  border-color: white;
+  border-width: 5px;
+  border-radius: 17px;
+}
+
 .text-primary-nutresa{
   color: #FFDF42 !important;
 }

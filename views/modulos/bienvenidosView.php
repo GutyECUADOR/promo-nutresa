@@ -17,10 +17,10 @@
                 <div class="row justify-content-center mb-2">
                 <div class="col-auto text-center">
                     <p style="z-index: 2;">
-                        Bienvenido a <span class="text-secondary-nutresa">Gana fácil Nutresa</span> , el lugar donde viven nuestras mejores promociones y donde ganar es muy fácil.
+                        Bienvenido a <span class="text-primary-nutresa">Gana fácil Nutresa</span> , el lugar donde viven nuestras mejores promociones y donde ganar es muy fácil.
                         Solo debes inscribirte y participar en todas las iniciativas de Nutresa que mes a mes, te llenarán de premios.
                     </p>
-                    <h3 class="display-5 text-secondary-nutresa" style="z-index: 2;">HAZ CLIC EN LA PROMOCIÓN QUE DESEAS PARTICIPAR.</h3>
+                    <h3 class="display-5 text-primary-nutresa" style="z-index: 2;">HAZ CLIC EN LA PROMOCIÓN QUE DESEAS PARTICIPAR.</h3>
                 </div>
                 <!--end of col-->
                 </div>
