@@ -19,19 +19,19 @@
                     <div class="col-12 col-md-10 col-lg-6" >
                         <form  @submit.prevent="verify_code">
                             <div class="form-group">
-                                <label for="login-email">Correo</label>
+                                <label for="login-email" style="color:white!important;">Correo</label>
                                 <input class="form-control form-control-lg" v-model="usuario.correo" type="email" name="correo" id="login-email" placeholder="Email" required/>
                             </div>
                             <div class="form-group">
-                                <label for="login-nombre">Nombre</label>
+                                <label for="login-nombre" style="color:white!important;">Nombre</label>
                                 <input class="form-control form-control-lg"  v-model="usuario.nombre" type="text" name="nombre" id="login-nombre" placeholder="Nombre" required/>
                             </div>
                             <div class="form-group">
-                                <label for="login-telefono">Teléfono</label>
+                                <label for="login-telefono" style="color:white!important;">Teléfono</label>
                                 <input class="form-control form-control-lg" v-model="usuario.telefono" type="text" name="telefono" id="login-telefono" placeholder="Teléfono" required/>
                             </div>
                             <div class="form-group">
-                                <label for="login-codigo">Codigo</label>
+                                <label for="login-codigo" style="color:white!important;">Codigo</label>
                                 <input class="form-control form-control-lg" v-model="usuario.codigo" type="password" name="codigo" id="login-codigo" placeholder="Código" required/>
                             </div>
                             <div class="text-center">
