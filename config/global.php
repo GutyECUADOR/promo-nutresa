@@ -11,3 +11,7 @@ define("ROOT_PATH","");   //Root del proyecto
 define("LOGO_ONLINE","");
 define("SITIOWEB_ONLINE","");
 define("BODY_EMAIL_TEXT","");
+
+
+//Constructor
+define("FECHA_EVENTO","Viernes 25 de Junio, 2021");

@@ -44,7 +44,6 @@
         </section>
     </div>
     
-    
     <!-- <section>
         <div class="container">
             <div class="row justify-content-center mb-5">
@@ -88,7 +87,9 @@
     </section> -->
     
     <?php require_once 'modals/terminosModal.php' ?>
+    <?php require_once 'modals/whatsapp.php'?>
     <?php require_once 'sis_modules/footer.php' ?>
+
 </div>
 
 

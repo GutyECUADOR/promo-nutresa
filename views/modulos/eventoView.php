@@ -6,7 +6,10 @@
             <div class="container">
                 <div class="row justify-content-center mb-2">
                 <div class="col-auto text-center">
-                    <h3 class="text-secondary-nutresa" style="font-weight: bold">EVENTO EN VIVO</h3>
+                    <h3 class="text-secondary-nutresa" style="font-weight: bold; line-height: 0.1;">EVENTO EN VIVO</h3>
+                    <h4 class="text-secondary-nutresa" style="font-weight: bold" style="line-height: 0.1;"><?php echo FECHA_EVENTO?></h4>
+                    
+                    
                      <p class="text-secondary-nutresa">
                         Ingresa el código de promoción para poder acceder al evento.
                     </p>
@@ -17,6 +20,16 @@
                 <!--end of row-->
                 <div class="row justify-content-center" id="formregistro" v-if="!search_user.isAutenticated">
                     <div class="col-12 col-md-10 col-lg-6" >
+
+                        <div 
+                        class="flipper" 
+                        data-datetime="2021-05-20 00:00:00"
+                        data-reverse="true" 
+                        data-template="d|H|i|s" 
+                        data-labels="Dias|Horas|Minutos|Segundos" 
+                        id="modalFlipper">
+                        </div>
+                        
                         <form  @submit.prevent="verify_code">
                             <div class="form-group">
                                 <label for="login-email" class="text-secondary-nutresa">Correo</label>
@@ -109,15 +122,13 @@
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/popper.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-
-<!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
-<script type="text/javascript" src="assets/js/jquery.fireworks.js"></script>
+<script type="text/javascript" src="assets/js/jquery.flipTimer.js"></script>
 
 <script type="text/javascript" src="<?php echo ROOT_PATH; ?>assets\js\pages\evento.js?<?php echo date('Ymdhiiss')?>"></script>
 
 <script type="text/javascript" >
-  $('.fireworks').fireworks();
   $(function () {
+        $('#modalFlipper').flipper('init');
           $('[data-toggle="popover"]').popover()
           $("#whatspopover").popover("show");
           $("#downloadpopover").popover("show");

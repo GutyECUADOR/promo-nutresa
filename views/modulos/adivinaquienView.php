@@ -4,11 +4,8 @@
     
     <section class="text-light" style="background: radial-gradient(circle, #ffdc3e 0%, #ffd72c 100%);">
         <div class="container">
-            <div class="row justify-content-center mb-2">
             
-            </div>
-            <!--end of row-->
-            <div class="row justify-content-center">
+            <div class="row justify-content-center mb-4">
                 <div class="col-12 col-md-10 col-lg-6 text-center">
                     <img src="assets/img/BANNER-CORONA1.png" alt="Promo" class="img-responsive w-100 zoom mb-1" style="border-radius:10px">
                 </div>
@@ -42,7 +39,7 @@
         </div>
     <!--end of container-->
     </section>
-   
+    <?php require_once 'modals/modal_video.php' ?>
     <?php require_once 'modals/terminosModal.php' ?>
     <?php require_once 'sis_modules/footer.php' ?>
 
@@ -64,5 +61,16 @@
           $('[data-toggle="popover"]').popover()
           $("#whatspopover").popover("show");
           $("#downloadpopover").popover("show");
-        })
+    })
+</script>
+
+<script type="text/javascript">
+      $(window).on('load', function() {
+          $('#modal-video').modal('show');
+
+          $("#modal-video").on('hidden.bs.modal', function (e) {
+            $("#modal-video iframe").attr("src", $("#modal-video iframe").attr("src"));
+            $('#modal-fin').modal('show');
+        });
+      });
 </script>
