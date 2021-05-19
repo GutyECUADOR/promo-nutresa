@@ -1,6 +1,6 @@
 <?php namespace App\Models;
 
-class ajaxModel extends conexion  {
+class AjaxModel extends Conexion  {
     
     public function __construct() {
         parent::__construct();

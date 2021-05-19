@@ -1,5 +1,5 @@
 <?php
-use App\Controllers\ajaxController;
+use App\Controllers\AjaxController;
 use Dotenv\Dotenv;
 
 @ob_start();
@@ -19,7 +19,7 @@ $dotenv->load();
   /* Cuerpo del API */
 
   try{
-    $ajaxController = new ajaxController();
+    $ajaxController = new AjaxController();
 
     if (isset($_GET["action"])) {
       $HTTPaction = $_GET["action"];
