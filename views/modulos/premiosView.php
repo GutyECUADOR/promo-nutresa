@@ -11,7 +11,9 @@
                 </div>
 
                 <div class="col-12 col-md-10 col-lg-12 text-center">
-                <span class="text-secondary-nutresa " style="z-index: 2; font-weight: bold;">Una vez se verifique que el participante haya cumplido con términos y condiciones de la actividad sera contactado en menos de 48 horas, y en una maximo de 30 dias calendario se recarga del valor del Bono de SU RED a su cuenta de MI BOLSILLO para que pueda redimirlo virtualmente. </span>
+                <span class="text-secondary-nutresa " style="z-index: 2; font-weight: bold;">
+                    Una vez se verifique que el participante haya cumplido con términos y condiciones de la actividad, será contactado en menos de 48 horas y en un tiempo maximo de 30 dias calendario se recargá del valor del Bono ganado en su cuenta de MI BOLSILLO de SU RED para que pueda redimirlo virtualmente
+                </span>
                 </div>
             </div>
 

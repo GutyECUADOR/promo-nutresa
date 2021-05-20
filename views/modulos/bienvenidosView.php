@@ -22,10 +22,10 @@
                 <div class="row justify-content-center">
                     <div class="col-auto text-center">
                         <p style="z-index: 2;">
-                            Bienvenido a <span class="text-primary-nutresa">Momentos Únicos Nutresa</span> , el lugar donde viven nuestras mejores promociones y donde ganar depende de tu habilidad.
+                            Bienvenido a <span class="text-primary-nutresa">Momentos Únicos Nutresa</span>, el lugar donde viven nuestras mejores promociones y donde ganar depende de tu habilidad.</br>
                             Solo debes inscribirte y participar en todas las iniciativas de Nutresa que mes a mes, te podrán premiar.
                         </p>
-                        <h3 class="display-5 text-primary-nutresa" style="z-index: 2;">PROMOCIÓN VIGENTE</h3>
+                        <h3 class="display-5 text-primary-nutresa" style="z-index: 2;">Promoción vigente del 1 al 30 de Junio</h3>
                     </div>
                 <!--end of col-->
                 </div>
@@ -37,8 +37,7 @@
                                 <img src="assets/img/BANNER-CORONA1.png" alt="Promo" class="img-responsive w-100 zoom" style="border-radius:10px">
                             </a>
                         </div>
-                        <span class="display-5 text-primary-nutresa " style="z-index: 2;">Promoción vigente del 1 al 30 de Junio</span>
-                            
+                        
                     </div>
                 <!--end of col-->
                 </div>
