@@ -8,12 +8,15 @@
                     <div class="col-auto text-center">
                         <h3 class="text-secondary-nutresa" style="font-weight: bold; line-height: 1;">EVENTO EN VIVO</h3>
                         <h4 class="text-secondary-nutresa" style="font-weight: bold; line-height: 1;">Domingo, 04 de Julio 2021 - De 5pm a 7pm</h4>
-                        <h4 class="text-secondary-nutresa" style="font-weight: bold; line-height: 0.5; margin-bottom: 10px!important;">¿CÓMO FUNCIONA?</h4>
                         
-                        <p class="text-secondary-nutresa">
-                            Contaremos con un animador (host) y un actor teatral, los cuales realizarán diversos performance, representando a diferentes personajes de la vida cotidiana colombiana y del mundo, para que puedas identificarlos en el menor tiempo posible, enviando la respuesta vía Whatsapp (320 3192388) y de esa manera poder ser uno de nuestros ganadores.
-                            Una Actividad llena de risas y alegrías, para que las disfrutes en casa, junto a tu familia y/o amigos, degustando de un delicioso y espumoso Chocolate Corona.
-                        </p>
+                        <div id="info" v-if="!search_user.isAutenticated">
+                            <h4 class="text-secondary-nutresa" style="font-weight: bold; line-height: 0.5; margin-bottom: 10px!important;">¿CÓMO FUNCIONA?</h4>
+                            <p class="text-secondary-nutresa" >
+                                Contaremos con un animador (host) y un actor teatral, los cuales realizarán diversos performance, representando a diferentes personajes de la vida cotidiana colombiana y del mundo, para que puedas identificarlos en el menor tiempo posible, enviando la respuesta vía Whatsapp (320 3192388) y de esa manera poder ser uno de nuestros ganadores.
+                                Una Actividad llena de risas y alegrías, para que las disfrutes en casa, junto a tu familia y/o amigos, degustando de un delicioso y espumoso Chocolate Corona.
+                            </p>
+                        
+                        </div>
                         
                         
                     </div>
@@ -21,7 +24,7 @@
                 <!--end of col-->
                 </div>
 
-                <div class="row justify-content-center mb-2">
+                <div class="row justify-content-center mb-2" v-if="!search_user.isAutenticated">
                     <div class="col-12 col-md-8 justify-content-center text-center">
                         <div 
                             class="flipper" 
