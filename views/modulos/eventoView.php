@@ -70,50 +70,9 @@
         </section>
     
     
-    <!-- <section>
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-            <div class="col-auto">
-                <h3 class="h4">Nuestras promociones</h3>
-            </div>
-          
-            </div>
-           
-            <div class="row justify-content-center">
-            <div class="col-12 col-lg-10">
-                <ul class="feature-list feature-list-sm row">
-
-                <li class="col-6 col-md-4">
-                    <a class="card text-center" href="#">
-                    <div class="card-body">
-                        <img src="assets/img/promojet.png" alt="promo" class="w-100">
-                    </div>
-                    </a>
-                </li>
-
-                <li class="col-6 col-md-4">
-                    <a class="card text-center" href="#">
-                    <div class="card-body">
-                        <img src="assets/img/mesdelchocolate.png" alt="promo" class="w-100">
-                    </div>
-                    </a>
-                </li>
-
-                <li class="col-6 col-md-4">
-                    <a class="card text-center" href="#">
-                    <img src="assets/img/eltrineoregalos.png" alt="promo" class="w-100">
-                    </a>
-                </li>
-
-                </ul>
-            </div>
-            </div>
-         
-        </div>
-    </section> -->
-    
     <?php require_once 'modals/terminosModal.php' ?>
     <?php require_once 'sis_modules/footer.php' ?>
+    <?php require_once 'modals/whatsapp.php'?>
 </div>
 
 
