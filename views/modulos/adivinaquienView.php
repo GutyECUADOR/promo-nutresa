@@ -6,24 +6,24 @@
         <div class="container">
             
             <div class="row justify-content-center mb-4">
-                <div class="col-12 col-md-10 col-lg-6 text-center">
-                    <img src="assets/img/BANNER-CORONA1.png" alt="Promo" class="img-responsive w-100 zoom mb-1" style="border-radius:10px">
+                <div class="col-12 col-md-10 col-lg-8 text-center">
+                    <img src="assets/img/KV-ADIVINA-CORONA-NUTRESA.png" alt="Promo" class="img-responsive w-100 zoom mb-1" style="border-radius:10px">
                 </div>
             </div>
 
             
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-6 text-center">
-                    <img src="assets/img/paso1_corona.png" alt="premios" class="img-responsive w-100 zoom">
+                    <img src="assets/img/MECANICA-1.png" alt="premios" class="img-responsive w-100 zoom">
                 </div>
                 <div class="col-12 col-md-10 col-lg-6 text-center">
-                    <img src="assets/img/paso2_corona.png" alt="premios" class="img-responsive w-100 zoom">
+                    <img src="assets/img/MECANICA-2.png" alt="premios" class="img-responsive w-100 zoom">
                 </div>
             </div>
            
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-6 text-center">
-                    <img src="assets/img/paso3_corona.png" alt="premios" class="img-responsive w-100 zoom">
+                    <img src="assets/img/MECANICA-3.png" alt="premios" class="img-responsive w-100 zoom">
                 </div>
             </div>
 

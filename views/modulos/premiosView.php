@@ -4,11 +4,8 @@
     
     <section class="text-light" style="background: radial-gradient(circle, #ffdc3e 0%, #ffd72c 100%);">
         <div class="container">
-            <div class="row justify-content-center mb-2">
-            
-            </div>
             <!--end of row-->
-            <div class="row justify-content-center">
+            <div class="row justify-content-center mb-4">
                 <div class="col-12 col-md-10 col-lg-6 text-center">
                     <img src="assets/img/corona-logo.png" alt="Promo" class="img-responsive w-75 zoom mb-3" style="border-radius:10px">
                 </div>
@@ -17,17 +14,17 @@
             
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-3 text-center">
-                    <img src="assets/img/BONOCORONA-125.png" alt="premios" class="img-responsive mb-3 w-100 zoom">
+                    <img src="assets/img/BONO-125.jpg" alt="premios" class="img-responsive mb-3 w-100 zoom">
                 </div>
                 <div class="col-12 col-md-10 col-lg-3 text-center">
-                    <img src="assets/img/BONOCORONA-200.png" alt="premios" class="img-responsive mb-3 w-100 zoom">
+                    <img src="assets/img/BONO-200.jpg" alt="premios" class="img-responsive mb-3 w-100 zoom">
                 </div>
 
                 <div class="col-12 col-md-10 col-lg-3 text-center">
-                    <img src="assets/img/BONOCORONA-300.png" alt="premios" class="img-responsive mb-3 w-100 zoom">
+                    <img src="assets/img/BONO-300.jpg" alt="premios" class="img-responsive mb-3 w-100 zoom">
                 </div>
                 <div class="col-12 col-md-10 col-lg-3 text-center">
-                    <img src="assets/img/BONOCORONA-900.png" alt="premios" class="img-responsive mb-3 w-100 zoom">
+                    <img src="assets/img/BONO-900.jpg" alt="premios" class="img-responsive mb-3 w-100 zoom">
                 </div>
             </div>
            

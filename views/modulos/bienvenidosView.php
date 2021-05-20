@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-12 text-center">
-                    <img alt="Logo" src="<?php echo LOGO_NAME?>" style="width:240px"/>
+                    <img alt="Logo" src="assets/img/MOMENTOS-UNICOS-NUTRESA.png" style="width:240px"/>
                 </div>
             </div>
         </div>
