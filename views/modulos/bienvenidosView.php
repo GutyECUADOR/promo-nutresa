@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-12 text-center">
-                    <img alt="Logo" src="assets/img/MOMENTOS-UNICOS-NUTRESA.png" style="width:240px"/>
+                    <img alt="Logo" src="assets/img/logo.png" style="width:240px"/>
                 </div>
             </div>
         </div>
@@ -12,29 +12,33 @@
 
 <div class="main-container">
     <div class="fireworks">
-        <section class="text-light" style="background: linear-gradient(135deg, #046224 0%, #7b9236  100%);">
+        <section class="text-light" style="background: linear-gradient(135deg, #046224 0%, #7b9236  100%); padding: 1rem 0;">
             <div class="container">
-                <div class="row justify-content-center mb-2">
-                <div class="col-auto text-center">
-                    <p style="z-index: 2;">
-                        Bienvenido a <span class="text-primary-nutresa">Momentos Únicos Nutresa</span> , el lugar donde viven nuestras mejores promociones y donde ganar es muy fácil.
-                        Solo debes inscribirte y participar en todas las iniciativas de Nutresa que mes a mes, te llenarán de premios.
-                    </p>
-                    <h3 class="display-5 text-primary-nutresa" style="z-index: 2;">HAZ CLIC EN LA PROMOCIÓN QUE DESEAS PARTICIPAR.</h3>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-6 text-center mb-2">
+                        <img alt="Logo" src="assets/img/MOMENTOS-UNICOS-NUTRESA.png" style="width:100%"/>
+                    </div>
                 </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto text-center">
+                        <p style="z-index: 2;">
+                            Bienvenido a <span class="text-primary-nutresa">Momentos Únicos Nutresa</span> , el lugar donde viven nuestras mejores promociones y donde ganar depende de tu habilidad.
+                            Solo debes inscribirte y participar en todas las iniciativas de Nutresa que mes a mes, te podrán premiar.
+                        </p>
+                        <h3 class="display-5 text-primary-nutresa" style="z-index: 2;">PROMOCIÓN VIGENTE</h3>
+                    </div>
                 <!--end of col-->
                 </div>
                 <!--end of row-->
-                <div class="row justify-content-center">
+                <div class="row justify-content-center text-center">
                     <div class="col-12 col-md-10 col-lg-6">
-                        <div class="card-body row no-gutters align-items-center">
+                        <div class="card-body row no-gutters align-items-center ">
                             <a href="?action=mecanica-adivina-quien" style="z-index: 2;">
                                 <img src="assets/img/BANNER-CORONA1.png" alt="Promo" class="img-responsive w-100 zoom" style="border-radius:10px">
                             </a>
-                        
-                            
                         </div>
-                    
+                        <span class="display-5 text-primary-nutresa " style="z-index: 2;">Promoción vigente del 1 al 30 de Junio</span>
+                            
                     </div>
                 <!--end of col-->
                 </div>
@@ -87,8 +91,9 @@
     </section> -->
     
     <?php require_once 'modals/terminosModal.php' ?>
-    <?php require_once 'modals/whatsapp.php'?>
+    
     <?php require_once 'sis_modules/footer.php' ?>
+    <?php require_once 'modals/whatsapp.php'?>
 
 </div>
 

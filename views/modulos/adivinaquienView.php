@@ -2,7 +2,7 @@
 
 <div class="main-container">
     
-    <section class="text-light" style="background: radial-gradient(circle, #ffdc3e 0%, #ffd72c 100%);">
+    <section class="text-light" style="background: radial-gradient(circle, #ffdc3e 0%, #ffd72c 100%); padding: 0 !important">
         <div class="container">
             
             <div class="row justify-content-center mb-4">
@@ -29,7 +29,7 @@
 
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-6 text-center">
-                    <img src="assets/img/bonos_corona.png" alt="premios" class="img-responsive w-100 zoom">
+                    <img src="assets/img/BODEGON-CORONA.png" alt="premios" class="img-responsive w-100 zoom">
                 </div>
             </div>
 
