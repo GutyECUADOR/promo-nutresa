@@ -9,6 +9,10 @@
                         <h3 class="text-secondary-nutresa" style="font-weight: bold; line-height: 1;">EVENTO EN VIVO</h3>
                         <h4 class="text-secondary-nutresa" style="font-weight: bold; line-height: 1;">Domingo, 04 de Julio 2021 - De 5pm a 7pm</h4>
                         
+                     
+                            <img src="assets/img/previewEvento.jpg" style="border: 6px solid #CCCCCC" alt="premios" class="img-responsive mb-3 w-50">
+                       
+
                         <div id="info" v-if="!search_user.isAutenticated">
                             <h4 class="text-secondary-nutresa" style="font-weight: bold; line-height: 0.5; margin-bottom: 10px!important;">¿CÓMO FUNCIONA?</h4>
                             <p class="text-secondary-nutresa" >
