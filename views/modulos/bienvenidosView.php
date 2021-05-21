@@ -33,8 +33,10 @@
                 <div class="row justify-content-center text-center">
                     <div class="col-12 col-md-10 col-lg-6">
                         <div class="card-body row no-gutters align-items-center ">
-                            <a href="?action=mecanica-adivina-quien" style="z-index: 2;">
-                                <img src="assets/img/BANNER-CORONA1.png" alt="Promo" class="img-responsive w-100 zoom" style="border-radius:10px">
+                            <a href="?action=mecanica-adivina-quien" class="pulse" style="z-index: 2;" >
+                                <img id="imgpopover"
+                                data-container="body" data-toggle="popover" data-placement="bottom" data-content="Dar click aqui para mas información."
+                                src="assets/img/BANNER-CORONA1.png" alt="Promo" class="img-responsive w-100" style="border-radius:10px">
                             </a>
                         </div>
                         
@@ -110,7 +112,7 @@
   $('.fireworks').fireworks();
   $(function () {
           $('[data-toggle="popover"]').popover()
-          $("#whatspopover").popover("show");
+          $("#whatspopover, #imgpopover").popover("show");
           $("#downloadpopover").popover("show");
         })
 </script>
