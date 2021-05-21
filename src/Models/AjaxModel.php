@@ -35,7 +35,7 @@ class AjaxModel extends Conexion  {
                 $stmt->execute();
                 $message ="Registro correcto, ya puede unirse el evento en Vivo.";
             }else{
-                $message ="El codigo de registro no es válido y ya fue utilizado.";
+                $message ="El codigo de registro no es válido o ya fue utilizado.";
             }
 
            

@@ -39,7 +39,8 @@
         </div>
     <!--end of container-->
     </section>
-    <?php require_once 'modals/modal_video.php' ?>
+
+    
     <?php require_once 'modals/terminosModal.php' ?>
     <?php require_once 'sis_modules/footer.php' ?>
     <?php require_once 'modals/whatsapp.php'?>
