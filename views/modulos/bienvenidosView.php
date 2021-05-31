@@ -35,7 +35,7 @@
                         <div class="card-body row no-gutters align-items-center ">
                             <a href="?action=mecanica-adivina-quien" class="pulse" style="z-index: 2;" >
                                 <img id="imgpopover"
-                                data-container="body" data-toggle="popover" data-placement="bottom" data-content="Dar click aqui para mas información."
+                                data-container="body" data-toggle="popover" data-placement="bottom" data-content="Dar click aqui para más información."
                                 src="assets/img/BANNER-CORONA1.png" alt="Promo" class="img-responsive w-100" style="border-radius:10px">
                             </a>
                         </div>

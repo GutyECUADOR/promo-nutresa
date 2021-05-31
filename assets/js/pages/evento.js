@@ -47,7 +47,7 @@ const app = new Vue({
             
         },
         getURLVideo(){
-            let url_evento = 'https://youtube.com/embed/KvRVky0r7YM?autoplay=true&controls=1';
+            let url_evento = 'https://youtube.com/embed/EfcXZ7KVJaQ?autoplay=true&controls=1';
             return url_evento;
         }
     },

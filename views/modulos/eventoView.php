@@ -1,6 +1,6 @@
 <?php require_once 'sis_modules/navbar.php' ?>
 
-<div class="main-container" id="app">
+<div class="main-container" id="app" oncontextmenu="return false; ">
   
         <section class="text-light" style="background: radial-gradient(circle, #ffdc3e 0%, #ffd72c 100%); padding-top:20px">
             <div class="container">
@@ -55,19 +55,19 @@
                         <form  @submit.prevent="verify_code" >
                             <div class="form-group">
                                 <label for="login-email" class="text-secondary-nutresa">Correo</label>
-                                <input class="form-control form-control-lg" v-model="usuario.correo" type="email" name="correo" id="login-email" placeholder="Email" required disabled/>
+                                <input class="form-control form-control-lg" v-model="usuario.correo" type="email" name="correo" id="login-email" placeholder="Email" required/>
                             </div>
                             <div class="form-group">
                                 <label for="login-nombre" class="text-secondary-nutresa">Nombre</label>
-                                <input class="form-control form-control-lg"  v-model="usuario.nombre" type="text" name="nombre" id="login-nombre" placeholder="Nombre" required disabled/>
+                                <input class="form-control form-control-lg"  v-model="usuario.nombre" type="text" name="nombre" id="login-nombre" placeholder="Nombre" required/>
                             </div>
                             <div class="form-group">
                                 <label for="login-telefono" class="text-secondary-nutresa">Teléfono</label>
-                                <input class="form-control form-control-lg" v-model="usuario.telefono" type="text" name="telefono" id="login-telefono" placeholder="Teléfono" required disabled/>
+                                <input class="form-control form-control-lg" v-model="usuario.telefono" type="text" name="telefono" id="login-telefono" placeholder="Teléfono" required/>
                             </div>
                             <div class="form-group">
                                 <label for="login-codigo" class="text-secondary-nutresa">Codigo</label>
-                                <input class="form-control form-control-lg" v-model="usuario.codigo" type="password" name="codigo" id="login-codigo" placeholder="Código" required disabled/>
+                                <input class="form-control form-control-lg" v-model="usuario.codigo" type="password" name="codigo" id="login-codigo" placeholder="Código" required/>
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-lg button-nutresa" style="background-color: #ffe000;" :disabled="search_user.isloading"  >
