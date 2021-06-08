@@ -13,7 +13,8 @@
                         LÍNEA DE SERVICIO AL CLIENTE COLOMBIA 018000521155
                     </h6>
                 </div>
-
+    
+                <!--
                 <div class="col-12 col-md-3 text-center pt-4">
                         <a href="https://www.facebook.com/" title="Facebook" target="_blank" class="btn btn-social-icon btn-facebook" style="border-radius: 50%; background-color:#f2ce3e">
                 <span class="fa fa-facebook" style="color:#266fbf"></span>
@@ -21,7 +22,7 @@
                 <a href="https://www.instagram.com/" title="Instagram" target="_blank" class="btn btn-social-icon btn-instagram" style="border-radius: 50%; background-color:#f2ce3e">
                 <span class="fa fa-instagram" style="color:#266fbf"></span>
                 </a>
-                </div>
+                </div>-->
 
             
             </div>

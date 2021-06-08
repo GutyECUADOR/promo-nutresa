@@ -16,6 +16,8 @@
       <meta http-equiv="Pragma" content="no-cache">
 
       <meta charset="utf-8">
+      <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="assets/img/favicon.ico" type="image/gif">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="prepárate para la mega promo">
       <link href="assets/css/socicon.css" rel="stylesheet" type="text/css" media="all" />
