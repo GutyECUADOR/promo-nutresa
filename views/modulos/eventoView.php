@@ -2,7 +2,7 @@
 
 <div class="main-container" id="app" oncontextmenu="return false; ">
   
-        <section class="text-light" style="background: radial-gradient(circle, #ffdc3e 0%, #ffd72c 100%); padding-top:20px">
+        <section class="text-light" style="background: url('./assets/img/FONDO.png'), radial-gradient(circle, #ffdc3e 0%, #ffd72c 100%); padding-top:20px">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
