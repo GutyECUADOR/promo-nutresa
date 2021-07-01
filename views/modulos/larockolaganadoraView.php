@@ -40,7 +40,7 @@
     <!--end of container-->
     </section>
 
-    <?php require_once 'modals/terminosModal.php' ?>
+    <?php require_once 'modals/terminosModal-LaRockola.php' ?>
     <?php require_once 'sis_modules/footer.php' ?>
     <?php require_once 'modals/whatsapp.php'?>
 
@@ -55,7 +55,7 @@
             </div>
             <div class="">
             <div class="embed-responsive embed-responsive-16by9 mb-3" style="border-width: 4px; margin-top:5%; border-radius: 5px;">
-                <iframe class="embed-responsive-item" style="border: 6px solid #CCCCCC" src="https://youtube.com/embed/5656656"></iframe>
+                <iframe class="embed-responsive-item" style="border: 6px solid #CCCCCC" src="https://youtube.com/embed/5gMmpbCc48Y?autoplay=1&controls=1&mute=1"></iframe>
             </div>
             </div>
         </div>
@@ -83,7 +83,7 @@
     })
 </script>
 
-<!-- <script type="text/javascript">
+<script type="text/javascript">
       $(window).on('load', function() {
           $('#modal-video').modal('show');
 
@@ -92,4 +92,4 @@
             $('#modal-fin').modal('show');
         });
       });
-</script> -->
+</script>

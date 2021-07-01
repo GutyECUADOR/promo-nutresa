@@ -2,7 +2,7 @@
 /* Configurar aqui todas las variables globales a utilizar*/
 define("APP_NAME", "Momentos Únicos Nutresa");
 define("APP_UNIQUE_KEY", "PromoNutresa2021$");
-define("EMPRESA_NAME", "Momentos Únicos Nutresa");
+define("EMPRESA_NAME", "");
 define("LOGO_NAME", "./assets/img/logo.png");
 define("APP_VERSION", "1.0.1");
 define("ROOT_PATH","");   //Root del proyecto

@@ -7,13 +7,13 @@
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
                         <h3 class="text-secondary-nutresa" style="font-weight: bold; line-height: 1;">EVENTO EN VIVO</h3>
-                        <h4 class="text-secondary-nutresa" style="font-weight: bold; line-height: 1; margin-bottom: 5px;">Domingo, 04 de Julio 2021 - De 5pm a 7pm</h4>
+                        <h4 class="text-secondary-nutresa" style="font-weight: bold; line-height: 1; margin-bottom: 5px;">Domingo, 08 de Agosto 2021 - De 5pm a 7pm</h4>
                     </div>
 
                     <div class="col-12 col-md-6 justify-content-center text-center mb-3" style="padding-left: 40px;" v-if="!search_user.isAutenticated">
                         <div 
                             class="flipper" 
-                            data-datetime="2021-07-04 00:00:00"
+                            data-datetime="2021-08-08 00:00:00"
                             data-reverse="true" 
                             data-template="dd|HH|ii|ss" 
                             data-labels="Dias|Horas|Minutos|Segundos" 
@@ -25,13 +25,15 @@
                         
                         <div id="info">
                             <h4 class="text-secondary-nutresa" style="font-weight: bold; line-height: 0.5; margin-bottom: 10px!important;">¿CÓMO FUNCIONA?</h4>
-                            <p class="text-secondary-nutresa mb-3">
-                                Contaremos con un animador (host) y un actor teatral, los cuales realizarán diversos performance, representando a diferentes personajes de la vida cotidiana colombiana y del mundo, para que puedas identificarlos en el menor tiempo posible, enviando la respuesta vía Whatsapp (320 3192388) y de esa manera poder ser uno de nuestros ganadores.
-                                Una Actividad llena de risas y alegrías, para que las disfrutes en casa, junto a tu familia y/o amigos, degustando de un delicioso y espumoso Chocolate Corona.
-                            </p>
+                           
                         </div>
+                            <p class="text-secondary-nutresa mb-3">
+                                <strong>
+                                ¡Será toda una rumba! Los participantes deberán adivinar el nombre de la canción, según las pistas que va dando la orquesta en vivo con cada uno de sus instrumentos, y de acuerdo a los géneros que salgal del a Rockola Virtual, se realizaran 20 performance y los participantes que sean los primeros en adivinar el nombre de la canción o artista podrán ganar enviando la respuesta vía Whatsapp (320 3192388) o por el chat del evento y de esa manera poder ser uno de nuestros ganadores. Una Actividad llena de alegría y diversión para que las disfrutes en casa, junto a tu familia y/o amigos, degustando de un delicioso cafe Sello Rojo y Colcafe.
+                                </strong>
+                            </p>
 
-                        <img src="assets/img/previewEvento.jpg" style="border: 6px solid #CCCCCC" alt="premios" class="img-responsive mb-3 w-100">
+                        <img src="assets/img/previewEventoCafe.jpg" style="border: 6px solid #CCCCCC" alt="premios" class="img-responsive mb-3 w-100">
                     
                         
                     </div>
@@ -55,20 +57,33 @@
                         <form  @submit.prevent="verify_code" >
                             <div class="form-group">
                                 <label for="login-email" class="text-secondary-nutresa">Correo</label>
-                                <input class="form-control form-control-lg" v-model="usuario.correo" type="email" name="correo" id="login-email" placeholder="Email" required/>
+                                <input class="form-control form-control-lg" v-model="usuario.correo" type="email" name="correo" id="login-email" placeholder="Email" disabled required/>
                             </div>
                             <div class="form-group">
                                 <label for="login-nombre" class="text-secondary-nutresa">Nombre</label>
-                                <input class="form-control form-control-lg"  v-model="usuario.nombre" type="text" name="nombre" id="login-nombre" placeholder="Nombre" required/>
+                                <input class="form-control form-control-lg"  v-model="usuario.nombre" type="text" name="nombre" id="login-nombre" placeholder="Nombre" disabled required/>
                             </div>
                             <div class="form-group">
                                 <label for="login-telefono" class="text-secondary-nutresa">Teléfono</label>
-                                <input class="form-control form-control-lg" v-model="usuario.telefono" type="text" name="telefono" id="login-telefono" placeholder="Teléfono" required/>
+                                <input class="form-control form-control-lg" v-model="usuario.telefono" type="text" name="telefono" id="login-telefono" placeholder="Teléfono" disabled required/>
                             </div>
                             <div class="form-group">
-                                <label for="login-codigo" class="text-secondary-nutresa">Codigo</label>
-                                <input class="form-control form-control-lg" v-model="usuario.codigo" type="password" name="codigo" id="login-codigo" placeholder="Código" required/>
+                                <label for="login-codigo" class="text-secondary-nutresa">Código</label>
+                                <input class="form-control form-control-lg" v-model="usuario.codigo" type="password" name="codigo" id="login-codigo" placeholder="Código" disabled required/>
                             </div>
+                            
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" value="agree" name="agree-terms" id="check-agree" required>
+                              <label style="color: #A20303;" class="custom-control-label text-justify" for="check-agree">He leído y aceptado los Términos y condiciones.</a>
+                              </label>
+                            </div>
+                            
+                             <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" value="agree" name="agree-personal-data" id="agree-personal-data" required>
+                              <label style="color: #A20303;" class="custom-control-label text-justify" for="agree-personal-data">Autorizo el tratamiento de mis datos personales para participar en la Actividad promocional.</a>
+                              </label>
+                            </div>
+                            
                             <div class="text-center">
                                 <button type="submit" class="btn btn-lg button-nutresa" style="background-color: #ffe000;" :disabled="search_user.isloading"  >
                                     <i class="fa" :class="[{'fa-spin fa-refresh': search_user.isloading}, {  'fa-key' : !search_user.isloading  }]" ></i> Ingresar al evento

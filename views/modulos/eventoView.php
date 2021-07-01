@@ -2,7 +2,7 @@
 
 <div class="main-container" id="app" oncontextmenu="return false; ">
   
-        <section class="text-light" style="background: url('./assets/img/FONDO.png'), radial-gradient(circle, #ffdc3e 0%, #ffd72c 100%); padding-top:20px">
+        <section class="text-light" style="background: radial-gradient(circle, #ffdc3e 0%, #ffd72c 100%); padding-top:20px">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
@@ -55,25 +55,37 @@
                         <form  @submit.prevent="verify_code" >
                             <div class="form-group">
                                 <label for="login-email" class="text-secondary-nutresa">Correo</label>
-                                <input class="form-control form-control-lg" v-model="usuario.correo" type="email" name="correo" id="login-email" placeholder="Email" required/>
+                                <input class="form-control form-control-lg" v-model="usuario.correo" type="email" name="correo" id="login-email" placeholder="Email" disabled required/>
                             </div>
                             <div class="form-group">
                                 <label for="login-nombre" class="text-secondary-nutresa">Nombre</label>
-                                <input class="form-control form-control-lg"  v-model="usuario.nombre" type="text" name="nombre" id="login-nombre" placeholder="Nombre" required/>
+                                <input class="form-control form-control-lg"  v-model="usuario.nombre" type="text" name="nombre" id="login-nombre" placeholder="Nombre" disabled required/>
                             </div>
                             <div class="form-group">
                                 <label for="login-telefono" class="text-secondary-nutresa">Teléfono</label>
-                                <input class="form-control form-control-lg" v-model="usuario.telefono" type="text" name="telefono" id="login-telefono" placeholder="Teléfono" required/>
+                                <input class="form-control form-control-lg" v-model="usuario.telefono" type="text" name="telefono" id="login-telefono" placeholder="Teléfono" disabled required/>
                             </div>
                             <div class="form-group">
                                 <label for="login-codigo" class="text-secondary-nutresa">Codigo</label>
-                                <input class="form-control form-control-lg" v-model="usuario.codigo" type="password" name="codigo" id="login-codigo" placeholder="Código" required/>
+                                <input class="form-control form-control-lg" v-model="usuario.codigo" type="password" name="codigo" id="login-codigo" placeholder="Código" disabled required/>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" value="agree" name="agree-terms" id="check-agree" required>
+                              <label style="color: #A20303;" class="custom-control-label text-justify" for="check-agree">He leído y aceptado los Términos y condiciones.</a>
+                              </label>
+                            </div>
+                            
+                             <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" value="agree" name="agree-personal-data" id="agree-personal-data" required>
+                              <label style="color: #A20303;" class="custom-control-label text-justify" for="agree-personal-data">Autorizo el tratamiento de mis datos personales para participar en la Actividad promocional.</a>
+                              </label>
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-lg button-nutresa" style="background-color: #ffe000;" :disabled="search_user.isloading"  >
                                     <i class="fa" :class="[{'fa-spin fa-refresh': search_user.isloading}, {  'fa-key' : !search_user.isloading  }]" ></i> Ingresar al evento
                                 </button>
                             </div>
+                            
                         </form>
                     </div>
                 <!--end of col-->

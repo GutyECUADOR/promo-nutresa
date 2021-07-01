@@ -20,17 +20,17 @@
             
             <div class="row justify-content-center mb-3">
                 <div class="col-12 col-md-10 col-lg-3 text-center">
-                    <img src="assets/img/BONO-125.jpg" alt="premios" class="img-responsive mb-3 w-100 zoom">
+                    <img src="assets/img/BONO-125.png" alt="premios" class="img-responsive mb-3 w-100 zoom">
                 </div>
                 <div class="col-12 col-md-10 col-lg-3 text-center">
-                    <img src="assets/img/BONO-200.jpg" alt="premios" class="img-responsive mb-3 w-100 zoom">
+                    <img src="assets/img/BONO-200.png" alt="premios" class="img-responsive mb-3 w-100 zoom">
                 </div>
 
                 <div class="col-12 col-md-10 col-lg-3 text-center">
-                    <img src="assets/img/BONO-300.jpg" alt="premios" class="img-responsive mb-3 w-100 zoom">
+                    <img src="assets/img/BONO-300.png" alt="premios" class="img-responsive mb-3 w-100 zoom">
                 </div>
                 <div class="col-12 col-md-10 col-lg-3 text-center">
-                    <img src="assets/img/BONO-900.jpg" alt="premios" class="img-responsive mb-3 w-100 zoom">
+                    <img src="assets/img/BONO-900.png" alt="premios" class="img-responsive mb-3 w-100 zoom">
                 </div>
             </div>
            
