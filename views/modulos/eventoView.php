@@ -105,6 +105,7 @@
     
     
     <?php require_once 'modals/terminosModal.php' ?>
+    <?php require_once 'modals/eventoSujerenciasModal.php' ?>
     <?php require_once 'sis_modules/footer.php' ?>
     <?php require_once 'modals/whatsapp.php'?>
 </div>
@@ -121,9 +122,11 @@
 
 <script type="text/javascript" >
   $(function () {
+        $('#eventoSujerenciasModal').modal('show');
         $('#modalFlipper').flipper('init');
           $('[data-toggle="popover"]').popover()
           $("#whatspopover").popover("show");
           $("#downloadpopover").popover("show");
-        })
+
+    })
 </script>
