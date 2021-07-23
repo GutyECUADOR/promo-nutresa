@@ -33,10 +33,10 @@
                 <div class="row justify-content-center text-center">
                     <div class="col-12 col-md-10 col-lg-6">
                         <div class="card-body row no-gutters align-items-center ">
-                            <a href="?action=larockolaganadora" class="pulse" style="z-index: 2;" >
+                            <a href="?action=tardemagica" class="pulse" style="z-index: 2;" >
                                 <img id="imgpopover"
                                 data-container="body" data-toggle="popover" data-placement="bottom" data-content="Dar click aqui para más información."
-                                src="assets/img/BANNER-SELLOROJO.png" alt="Promo" class="img-responsive w-100" style="border-radius:10px">
+                                src="assets/img/tardemagica/KV-TARDE-MAGICA-SALTIN-NOEL-Y-DUCALES.png" alt="Promo" class="img-responsive w-100" style="border-radius:10px">
                             </a>
                         </div>
                         
@@ -64,7 +64,13 @@
 
                 <li class="col-6 col-md-6">
                     <a class="card text-center" href="?action=mecanica-adivina-quien">
-                        <img src="assets/img/BANNER-CORONA1.png" alt="promo" class="w-100">
+                        <img src="assets/img/BANNER-CORONA2.png" alt="promo" class="w-100">
+                    </a>
+                </li>
+
+                <li class="col-6 col-md-6">
+                    <a class="card text-center" href="?action=larockolaganadora">
+                        <img src="assets/img/BANNER-SELLOROJO.png" alt="promo" class="w-100">
                     </a>
                 </li>
 

@@ -34,6 +34,21 @@ class RouteModel {
             case 'evento-rockola':
                 $contenido = "views/modulos/evento-rockolaView.php";
                 break;
+
+            // Tarde Mágica
+
+            
+            case 'tardemagica':
+                $contenido = "views/modulos/larockolaganadoraView.php";
+                break;
+            
+            case 'premios-tardemagica':
+                $contenido = "views/modulos/premioslarockolaView.php";
+                break;
+        
+            case 'evento-tardemagica':
+                $contenido = "views/modulos/evento-rockolaView.php";
+                break;
                 
                 
             default:
