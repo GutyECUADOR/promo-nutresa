@@ -1,8 +1,8 @@
-<?php require_once 'sis_modules/navbar-navbar-tardemagica.php' ?>
+<?php require_once 'sis_modules/navbar-tardemagica.php' ?>
 
 <div class="main-container" id="app" oncontextmenu="return false; ">
   
-        <section class="text-light" style="background: url('./assets/img/FONDO.png'); padding-top:20px">
+        <section class="text-light" style="background: url('./assets/img/tardemagica/fondo.png'); padding-top:20px">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
@@ -27,10 +27,10 @@
                             <h4 class="text-secondary-nutresa" style="font-weight: bold; line-height: 0.5; margin-bottom: 10px!important;">¿CÓMO FUNCIONA?</h4>
                            
                         </div>
-                            <p class="text-secondary-nutresa mb-3">
-                                <strong>
+                            <p class="text-white mb-3">
+                               
                                 ¡Será toda una rumba! Los participantes deberán adivinar el nombre de la canción, según las pistas que va dando la orquesta en vivo con cada uno de sus instrumentos, y de acuerdo a los géneros que salgal del a Rockola Virtual, se realizaran 20 performance y los participantes que sean los primeros en adivinar el nombre de la canción o artista podrán ganar enviando la respuesta vía Whatsapp (320 3192388) o por el chat del evento y de esa manera poder ser uno de nuestros ganadores. Una Actividad llena de alegría y diversión para que las disfrutes en casa, junto a tu familia y/o amigos, degustando de un delicioso cafe Sello Rojo y Colcafe.
-                                </strong>
+                                
                             </p>
 
                         <img src="assets/img/previewEventoCafe.jpg" style="border: 6px solid #CCCCCC" alt="premios" class="img-responsive mb-3 w-100">

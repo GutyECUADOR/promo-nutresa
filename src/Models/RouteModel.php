@@ -39,15 +39,15 @@ class RouteModel {
 
             
             case 'tardemagica':
-                $contenido = "views/modulos/larockolaganadoraView.php";
+                $contenido = "views/modulos/tardemagicaView.php";
                 break;
             
             case 'premios-tardemagica':
-                $contenido = "views/modulos/premioslarockolaView.php";
+                $contenido = "views/modulos/premiosTardeMagicaView.php";
                 break;
         
             case 'evento-tardemagica':
-                $contenido = "views/modulos/evento-rockolaView.php";
+                $contenido = "views/modulos/evento-tardemagicaView.php";
                 break;
                 
                 

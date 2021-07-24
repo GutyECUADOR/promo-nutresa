@@ -1,17 +1,17 @@
-<?php require_once 'sis_modules/navbar-navbar-tardemagica.php' ?>
+<?php require_once 'sis_modules/navbar-tardemagica.php' ?>
 
 <div class="main-container">
     
-    <section class="text-light" style="background: url('./assets/img/FONDO.png')">
+    <section class="text-light" style="background: url('./assets/img/tardemagica/fondo.png')">
         <div class="container">
             <!--end of row-->
             <div class="row justify-content-center mb-4">
                 <div class="col-12 col-md-10 col-lg-6 text-center">
-                    <img src="assets/img/concepto-lado-derecho.png" alt="Promo" class="img-responsive w-75 zoom mb-3" style="border-radius:10px">
+                    <img src="assets/img/tardemagica/KV-TARDE-MAGICA-SALTIN-NOEL-Y-DUCALES.png" alt="Promo" class="img-responsive w-75 zoom mb-3" style="border-radius:10px">
                 </div>
 
                 <div class="col-12 col-md-10 col-lg-12 text-center">
-                <span class="text-secondary-nutresa " style="z-index: 2; font-weight: bold;">
+                <span class="text-white" style="z-index: 2;">
                     Una vez se verifique que el participante haya cumplido con términos y condiciones de la actividad, será contactado en menos de 48 horas y en un tiempo maximo de 30 dias calendario se recargá del valor del Bono ganado en su cuenta de MI BOLSILLO de SU RED para que pueda redimirlo virtualmente
                 </span>
                 </div>
@@ -20,17 +20,17 @@
             
             <div class="row justify-content-center mb-3">
                 <div class="col-12 col-md-10 col-lg-3 text-center">
-                    <img src="assets/img/BONO-125-rockola.jpg" alt="premios" class="img-responsive mb-3 w-100 zoom">
+                    <img src="assets/img/tardemagica/BONO2.jpg" alt="premios" class="img-responsive mb-3 w-100 zoom">
                 </div>
                 <div class="col-12 col-md-10 col-lg-3 text-center">
-                    <img src="assets/img/BONO-200-rockola.jpg" alt="premios" class="img-responsive mb-3 w-100 zoom">
+                    <img src="assets/img/tardemagica/BONO4.jpg" alt="premios" class="img-responsive mb-3 w-100 zoom">
                 </div>
 
                 <div class="col-12 col-md-10 col-lg-3 text-center">
-                    <img src="assets/img/BONO-300-rockola.jpg" alt="premios" class="img-responsive mb-3 w-100 zoom">
+                    <img src="assets/img/tardemagica/BONO6.jpg" alt="premios" class="img-responsive mb-3 w-100 zoom">
                 </div>
                 <div class="col-12 col-md-10 col-lg-3 text-center">
-                    <img src="assets/img/BONO-900-rockola.jpg" alt="premios" class="img-responsive mb-3 w-100 zoom">
+                    <img src="assets/img/tardemagica/BONO8.jpg" alt="premios" class="img-responsive mb-3 w-100 zoom">
                 </div>
             </div>
            

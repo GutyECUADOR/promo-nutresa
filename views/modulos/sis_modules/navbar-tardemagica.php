@@ -25,16 +25,16 @@
                     <a href="?action=inicio" class="nav-link  <?php echo getActive('inicio')?>">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="?action=larockolaganadora" class="nav-link <?php echo getActive('larockolaganadora')?>">Mecánica</a>
+                    <a href="?action=tardemagica" class="nav-link <?php echo getActive('tardemagica')?>">Mecánica</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" data-toggle="modal" data-target="#terminosModal" class="nav-link">Términos & Condiciones</a>
                 </li>
                 <li class="nav-item">
-                    <a href="?action=premios-rockola" class="nav-link <?php echo getActive('premios-rockola')?>">Premios</a>
+                    <a href="?action=premios-tardemagica" class="nav-link <?php echo getActive('premios-tardemagica')?>">Premios</a>
                 </li>
                 <li class="nav-item">
-                    <a href="?action=evento-rockola" class="nav-link <?php echo getActive('evento-rockola')?>">Evento</a>
+                    <a href="?action=evento-tardemagica" class="nav-link <?php echo getActive('evento-tardemagica')?>">Evento</a>
                 </li>
                
                 </ul>

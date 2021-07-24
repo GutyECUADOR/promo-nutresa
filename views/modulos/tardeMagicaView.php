@@ -1,4 +1,4 @@
-<?php require_once 'sis_modules/navbar-navbar-tardemagica.php' ?>
+<?php require_once 'sis_modules/navbar-tardemagica.php' ?>
 
 <div class="main-container">
     
@@ -7,29 +7,29 @@
             
             <div class="row justify-content-center mb-4">
                 <div class="col-12 col-md-10 col-lg-8 text-center">
-                    <img src="assets/img/KV-LA-ROCKOLA-GANADORA.png" alt="Promo" class="img-responsive w-75 zoom mb-1 mt-4" style="border-radius:10px">
+                    <img src="assets/img/tardemagica/KV-TARDE-MAGICA-SALTIN-NOEL-Y-DUCALES.png" alt="Promo" class="img-responsive w-75 zoom mb-1 mt-4" style="border-radius:10px">
                 </div>
             </div>
 
             
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-6 text-center">
-                    <img src="assets/img/paso1.png" alt="premios" class="img-responsive w-100 zoom">
+                    <img src="assets/img/tardemagica/MECANICA PASO 1.png" alt="premios" class="img-responsive w-100 zoom">
                 </div>
                 <div class="col-12 col-md-10 col-lg-6 text-center">
-                    <img src="assets/img/paso2.png" alt="premios" class="img-responsive w-100 zoom">
+                    <img src="assets/img/tardemagica/MECANICA PASO 2.png" alt="premios" class="img-responsive w-100 zoom">
                 </div>
             </div>
            
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-6 text-center">
-                    <img src="assets/img/paso3.png" alt="premios" class="img-responsive w-100 zoom">
+                    <img src="assets/img/tardemagica/MECANICA PASO 3.png" alt="premios" class="img-responsive w-100 zoom">
                 </div>
             </div>
 
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-6 text-center">
-                    <img src="assets/img/bodegon.png" alt="premios" class="img-responsive w-100 zoom">
+                    <img src="assets/img/tardemagica/bodegon.png" alt="premios" class="img-responsive w-100 zoom">
                 </div>
             </div>
 
